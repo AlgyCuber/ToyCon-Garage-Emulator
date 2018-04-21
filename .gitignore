@@ -1,0 +1,9 @@
+# IntelliJ IDEA
+.idea
+
+# Gradle
+.gradle
+!gradle-wrapper.jar
+
+# Build
+build

@@ -1,0 +1,23 @@
+group 'net.zero918nobita'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'net.zero918nobita.NLEmulator.Main'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'net.zero918nobita.NLEmulator.Main'
+    }
+}
