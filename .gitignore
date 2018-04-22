@@ -1,12 +1,11 @@
-# Java
-*.jar
+# dependencies
+node_modules
 
-# IntelliJ IDEA
-.idea
+# logs
+npm-debug.log
 
-# Gradle
-.gradle
-!gradle-wrapper.jar
+# Nuxt build
+.nuxt
 
-# Build
-build
+# Nuxt generate
+dist

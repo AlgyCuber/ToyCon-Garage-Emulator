@@ -1,0 +1,33 @@
+{
+    "start": {
+        "type": "button",
+        "controller": "1",
+        "target": "A",
+        "to": "timer1"
+    },
+    "timer1": {
+        "type": "timer",
+        "time": "0.00",
+        "to": "timer2"
+    },
+    "timer2": {
+        "type": "timer",
+        "time": "0.02",
+        "to": ["and", "emitLight"]
+    },
+    "stop": {
+        "type": "button",
+        "controller": "1",
+        "target": "X",
+        "to": "not"
+    },
+    "not": {
+        "type": "not", "to": "and"
+    },
+    "and": {
+        "type": "and", "to": "timer1"
+    },
+    "emitLight": {
+        "type": "emitLight"
+    }
+}
