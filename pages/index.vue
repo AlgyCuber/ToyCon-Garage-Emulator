@@ -1,50 +1,57 @@
 <template>
   <section class="container">
     <div>
-      <h1>Welcome to NLEmulator (Nintendo Labo Emulator) !!</h1>
-      <preview/>
-      <!--<app-logo/>
-      <h1 class="title">
-        nuxt-sample
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-        <nuxt-link
-          to="/sample"
-          class="button--green">サンプルページへ</nuxt-link>
-      </div>-->
+      <svg>
+        <rect class="node" x="20" y="20" width="100" height="100"/>
+      </svg>
     </div>
   </section>
 </template>
 
 <script>
-import Preview from '~/components/Preview.vue'
+import TGNode from '~/assets/TGNode';
 
 export default {
-  components: {
-    Preview
+  mounted: function() {
+    this.$nextTick(function() {
+      const node = new TGNode('start');
+      console.log(node.getName());
+    });
   }
 }
 </script>
 
 <style>
-.container {
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.node {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 2;
+}
+
+/*.container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+}*/
 
 /*.title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
