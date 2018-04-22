@@ -21,6 +21,7 @@
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-vue": "^4.5.0"
+    "eslint-plugin-vue": "^4.5.0",
+    "yarn": "^1.6.0"
   }
 }
