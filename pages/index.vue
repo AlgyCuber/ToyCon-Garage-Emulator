@@ -2,6 +2,7 @@
   <section class="container">
     <div>
       <h1>Welcome to NLEmulator (Nintendo Labo Emulator) !!</h1>
+      <preview/>
       <!--<app-logo/>
       <h1 class="title">
         nuxt-sample
@@ -27,13 +28,13 @@
 </template>
 
 <script>
-/*import AppLogo from '~/components/AppLogo.vue'
+import Preview from '~/components/Preview.vue'
 
 export default {
   components: {
-    AppLogo
+    Preview
   }
-}*/
+}
 </script>
 
 <style>
