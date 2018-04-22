@@ -4,11 +4,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'nuxt-sample',
+    title: 'NintendoLabo-Emulator',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'NLEmulator', name: 'NLEmulator', content: 'Nintendo LaboのToy-Conガレージで作成するプログラムを、Web上でデバッグできるエミュレータ' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
