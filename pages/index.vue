@@ -1,8 +1,9 @@
 <template>
   <section class="container">
     <div>
+      <p id='output'><pre><code>{{nodes.json}}</code></pre></p>
       <svg>
-        <rect class="node" x="20" y="20" width="100" height="100"/>
+        <rect class="node" x="220" y="70" width="100" height="100"/>
       </svg>
     </div>
   </section>
@@ -10,8 +11,12 @@
 
 <script>
 import TGNode from '~/assets/TGNode';
+import json from '~/static/sample.json';
 
 export default {
+  data ({params}) {
+    return { nodes: { json } }
+  },
   mounted: function() {
     this.$nextTick(function() {
       const node = new TGNode('start');
@@ -37,12 +42,21 @@ svg {
   width: 100vw;
   height: 100vh;
   background-color: black;
+  z-index: 1;
 }
 
 .node {
   fill: transparent;
   stroke: white;
   stroke-width: 2;
+}
+
+#output {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #228822;
+  z-index: 2;
 }
 
 /*.container {
