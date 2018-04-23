@@ -1,7 +1,7 @@
 {
-  "name": "nintendo-labo-emulator",
+  "name": "toycon-garage-emulator",
   "version": "1.0.0",
-  "description": "Nintendo LaboのToy-Conガレージで作成するプログラムを、PC側でデバッグできるエミュレータ",
+  "description": "Nintendo Laboの「Toy-Conガレージ」で作成するプログラムを、PC側でデバッグできるエミュレータ",
   "author": "0918nobita <nobita.0918@gmail.com>",
   "private": true,
   "scripts": {
