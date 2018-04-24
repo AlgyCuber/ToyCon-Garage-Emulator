@@ -1,7 +1,7 @@
 import Output from '~/assets/Output';
 
 export default class EmitLight extends Output {
-	constructor(name) {
+	constructor(/*string*/ name) {
 		super(name);
 	}
 };

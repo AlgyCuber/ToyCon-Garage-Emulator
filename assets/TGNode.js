@@ -1,6 +1,6 @@
 export default class TGNode {
-    constructor(name) {
+    constructor(/*string*/ name) {
         this.name = name;
     }
-    getName() { return this.name; }
+    getName() /*string*/ { return this.name; }
 };

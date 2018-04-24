@@ -5,7 +5,7 @@ export default class Input extends TGNode {
 		super(name);
 		this.dest = dest;
 	}
-	send() {
+	send() /*void*/ {
 		this.dest.receive();
 	}
 };
