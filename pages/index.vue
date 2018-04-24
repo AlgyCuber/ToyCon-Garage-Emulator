@@ -10,7 +10,9 @@
 </template>
 
 <script>
-import TGNode from '~/assets/TGNode';
+import Button from '~/assets/Button';
+import EmitLight from '~/assets/EmitLight';
+import Timer from '~/assets/Timer';
 import json from '~/static/sample.json';
 
 export default {
@@ -19,11 +21,11 @@ export default {
   },
   mounted: function() {
     this.$nextTick(function() {
-      const node = new TGNode('start');
+      const node = new EmitLight();
       console.log(node.getName());
     });
   }
-}
+};
 </script>
 
 <style>
